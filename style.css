@@ -14,9 +14,9 @@ body {
   }
   
   .profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
     object-fit: cover;
     margin-bottom: 20px;
   }
