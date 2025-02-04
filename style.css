@@ -1,76 +1,43 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #ffe6e6;
-    font-family: 'Arial', sans-serif;
+    background-color: #ffe5e5;
   }
   
   .container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    position: relative;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
   }
   
-  .profile-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 30%;
-    object-fit: cover;
-    margin-bottom: 20px;
+  .container .tenor-gif-embed {
+    max-width: 200px;
   }
   
-  .heart {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: red;
-    transform: rotate(-45deg);
-    margin: 0 auto;
-    animation: beat 1s infinite;
+  .container .btn {
+    display: flex;
+    gap: 25px;
   }
   
-  .heart::before,
-  .heart::after {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
+  .btn a {
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
   }
-  
-  .heart::before {
-    top: -50px;
-    left: 0;
-  }
-  
-  .heart::after {
-    left: 50px;
-    top: 0;
-  }
-  
-  @keyframes beat {
-    0%, 100% {
-      transform: scale(1) rotate(-45deg);
-    }
-    50% {
-      transform: scale(1.2) rotate(-45deg);
-    }
-  }
-  
-  h1 {
-    color: #ff4d4d;
-    font-size: 28px;
-    margin-top: 20px;
-  }
-  
-  p {
-    font-size: 10px;
-    color: #333;
-    margin-top: 10px;
-    max-width: 400px;
-    margin: 10px auto;
-  }
-  
